@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Day 1 Interview Questions</h1>
+    <p>Q1. Difference between "==" and "===" operators.</p>
+    <h3>(==) Comparison Operator</h3>
+    <ul>
+        <li>The JavaScript equals or loose equality operator ( == ) checks if two variables or values are equal. </li>
+        <li>It returns true if two values are of equal value, even if they're of different types.</li>
+    </ul>
+    <h3>(===) Comparison Operator</h3>
+    <ul>
+        <li>JavaScript Strict Equality Operator is used to compare two operands and return true. </li>
+        <li>if both the value and type of operands are the same.</li>
+    </ul>
+    <p>Q2. What are the differences between var,let and const?</p>
+    <h3>Var</h3>
+    <ul>
+        <li>Var: Function-scoped, meaning it can be globally or locally scoped </li>
+        <li>Var: Can be reassigned</li>
+    </ul>
+    <h3>let</h3>
+    <ul>
+        <li>Let: Block-scoped, meaning it can only be used within the block it's declared</li>
+        <li>Let: Can be reassigned, but not re-declared</li>
+    </ul>
+    <h3>const</h3>
+    <ul>
+        <li>Const: Block-scoped, meaning it can only be used within the block it's declared</li>
+        <li>Const: Cannot be reassigned or re-declared</li>
+    </ul>
+
+    <p>Q3. What is execution context.</p>
+    <h3>execution Context</h3>
+    <p>A JavaScript execution context is a critical concept that defines the environment in which JavaScript code is executed. The execution context consists of two main components:</p>
+
+    <p>Q4. What is creation Phase and execution phase.</p>
+    <h3>Creation Phase</h3>
+    <p>the "creation phase" refers to the initial stage where the JavaScript engine sets up the memory environment for a code block by allocating space for variables and functions</p>
+    <p>the "execution phase" is when the actual code within that environment is run line by line, assigning values to variables and executing functions. </p>
+    
+    <p>Q5. What is hosting</p>
+    <h3>Hosting</h3>
+    <ul>
+        <li>Hoisting is a JavaScript feature that moves variable and function declarations to the top of their scope before code execution.  </li>
+        <li>This allows you to use variables and functions before they are declared.</li>
+    </ul>
+    <p>Q6. Difference between undefined vs not defined vs NaN</p>
+    <h3>Undefined</h3>
+    <ul>
+        <li>Undefined represents any value that has not been defined anywhere in the program. </li>
+    </ul>
+    <h3>not defined</h3>
+     <ul>
+        <li>The JavaScript exception "variable is not defined" occurs when there is a non-existent variable referenced somewhere.</li>
+     </ul>
+    
+    <h3>Nan</h3>
+    <ul>
+        <li>NaN stands for Not a Number. You get this value when you try to do some operation that can't yield a meaningful result.</li>
+    </ul>
+    <p>Q7. How many operators do we have in JS?</p>
+    <p>the 7 types of JavaScript operators: </p>
+    <h4>Assignment Operator</h4>
+    <p>The Assignment Operator (=) assigns a value to a variable:</p>
+    <h4>Addition Operator</h4>
+    <p>The Addition Operator (+) adds numbers:</p>
+    <h4>Multiplication Operator</h4>
+    <p>The Multiplication Operator (*) multiplies numbers:</p>
+    <h4>Comparison Operators</h4>
+    <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+    <h4>Conditional (Ternary) Operator</h4>
+    <p>The conditional operator assigns a value to a variable based on a condition.</p>
+    <p>Q8.Explain Local Scope, Block Scope,Functional Scope and Scope Chain in JavaScript.</p>
+    <h4>Local or Function Scope:</h4>
+    <ul>
+        <li>Variables that are declared inside a function or a method have Local or Function Scope.</li>
+        <li>It means those variables or functions which are declared inside the function or a method can be accessed within that function only.</li>
+    </ul>
+    <h4>Block Scope:</h4>
+    <ul>
+        <li>Block Scope is related to the variables or functions which are declared using let and const since var does not have block scope.</li>
+        <li>Block Scope tells us that variables that are declared inside a block { }, can be accessed within that block only, not outside of that block.</li>
+    </ul>
+    <h4>Scope Chain</h4>
+    <ul>
+        <li>JavaScript engine uses scopes to find out the exact location or accessibility of variables and that particular process is known as Scope Chain.</li>
+        <li>Scope Chain means that one variable has a scope (it may be global or local/function or block scope) is used by another variable or function having another scope (may be global or local/function or block scope).</li>
+    </ul>
+    <script src="./index.js"></script>
+</body>
+</html>
