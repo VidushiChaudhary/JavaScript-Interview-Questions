@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>JavaScript Day 1 Interview Questions</h1>
-    <p>Q1. Difference between "==" and "===" operators.</p>
+    <p id="ques">Q1. Difference between "==" and "===" operators.</p>
     <h3>(==) Comparison Operator</h3>
     <ul>
         <li>The JavaScript equals or loose equality operator ( == ) checks if two variables or values are equal. </li>
@@ -17,77 +18,162 @@
     <ul>
         <li>JavaScript Strict Equality Operator is used to compare two operands and return true. </li>
         <li>if both the value and type of operands are the same.</li>
-    </ul>
-    <p>Q2. What are the differences between var,let and const?</p>
-    <h3>Var</h3>
+    </ul><hr>
+
+    <p id="ques">Q2. What are the differences between var,let and const?</p>
+    <h2>Var</h2>
     <ul>
         <li>Var: Function-scoped, meaning it can be globally or locally scoped </li>
         <li>Var: Can be reassigned</li>
     </ul>
-    <h3>let</h3>
+    <h2>let</h2>
     <ul>
         <li>Let: Block-scoped, meaning it can only be used within the block it's declared</li>
         <li>Let: Can be reassigned, but not re-declared</li>
     </ul>
-    <h3>const</h3>
+    <h2>const</h2>
     <ul>
         <li>Const: Block-scoped, meaning it can only be used within the block it's declared</li>
         <li>Const: Cannot be reassigned or re-declared</li>
-    </ul>
+    </ul><hr>
 
-    <p>Q3. What is execution context.</p>
-    <h3>execution Context</h3>
-    <p>A JavaScript execution context is a critical concept that defines the environment in which JavaScript code is executed. The execution context consists of two main components:</p>
-
-    <p>Q4. What is creation Phase and execution phase.</p>
-    <h3>Creation Phase</h3>
-    <p>the "creation phase" refers to the initial stage where the JavaScript engine sets up the memory environment for a code block by allocating space for variables and functions</p>
-    <p>the "execution phase" is when the actual code within that environment is run line by line, assigning values to variables and executing functions. </p>
-    
-    <p>Q5. What is hosting</p>
-    <h3>Hosting</h3>
+    <p id="ques">Q3. What is execution context.</p>
+    <h2>execution Context</h2>
+    <p id="p1">A JavaScript execution context is a critical concept that defines the environment in which JavaScript code is executed. The execution context consists of two main components:</p>
+    <hr>
+    <p id="ques">Q4. What is creation Phase and execution phase.</p>
+    <h2>Creation Phase</h2>
+    <p id="p1">the "creation phase" refers to the initial stage where the JavaScript engine sets up the memory environment for a code block by allocating space for variables and functions</p>
+    <p id="p1">the "execution phase" is when the actual code within that environment is run line by line, assigning values to variables and executing functions. </p>
+    <hr>
+    <p id="ques">Q5. What is hosting</p>
+    <h2>Hosting</h2>
     <ul>
         <li>Hoisting is a JavaScript feature that moves variable and function declarations to the top of their scope before code execution.  </li>
         <li>This allows you to use variables and functions before they are declared.</li>
     </ul>
-    <p>Q6. Difference between undefined vs not defined vs NaN</p>
-    <h3>Undefined</h3>
+    <hr>
+    <p id="ques">Q6. Difference between undefined vs not defined vs NaN</p>
+    <h2>Undefined</h2>
     <ul>
         <li>Undefined represents any value that has not been defined anywhere in the program. </li>
     </ul>
-    <h3>not defined</h3>
+    <h2>not defined</h2>
      <ul>
         <li>The JavaScript exception "variable is not defined" occurs when there is a non-existent variable referenced somewhere.</li>
      </ul>
     
-    <h3>Nan</h3>
+    <h2>Nan</h2>
     <ul>
         <li>NaN stands for Not a Number. You get this value when you try to do some operation that can't yield a meaningful result.</li>
     </ul>
-    <p>Q7. How many operators do we have in JS?</p>
-    <p>the 7 types of JavaScript operators: </p>
-    <h4>Assignment Operator</h4>
-    <p>The Assignment Operator (=) assigns a value to a variable:</p>
-    <h4>Addition Operator</h4>
-    <p>The Addition Operator (+) adds numbers:</p>
-    <h4>Multiplication Operator</h4>
-    <p>The Multiplication Operator (*) multiplies numbers:</p>
-    <h4>Comparison Operators</h4>
-    <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
-    <h4>Conditional (Ternary) Operator</h4>
-    <p>The conditional operator assigns a value to a variable based on a condition.</p>
-    <p>Q8.Explain Local Scope, Block Scope,Functional Scope and Scope Chain in JavaScript.</p>
-    <h4>Local or Function Scope:</h4>
+    <hr>
+    <p id="ques">Q7. How many operators do we have in JS?</p>
+    <p id="p1">JavaScript operators are symbols or keywords used to perform operations on values and variables.<br> They are the building blocks of JavaScript expressions and can manipulate data in various ways.</p>
+    <p id="p1">there are seven types operators: </p>
+    
+    <h2>1. Arithmetic Operators</h2>
+    <p id="p1">Arithmetic Operators perform mathematical calculations like addition, subtraction, multiplication, etc</p>
+    <h3>Example:</h3>
+    <pre>
+        const sum = 5 + 3; // Addition
+        const diff = 10 - 2; // Subtraction
+        const p = 4 * 2; // Multiplication
+        const q = 8 / 2; // Division
+        console.log(sum, diff, p, q); 
+    </pre>
+    <p id="p1">+ adds two numbers.<br>
+        – subtracts the second number from the first.<br>
+        * multiplies two numbers.<br>
+        / divides the first number by the second.</p>
+    <h3>Output: 8 8 8 4</h3>
+    <h2>2. Assignment Operator</h2>
+    <p id="p1">Assignment operators are used to assign values to variables. <br>They can also perform operations like addition or multiplication before assigning the value.</p>
+    <h3>Example:</h3>
+    <pre>
+        let n = 10;
+        n += 5;
+        n *= 2;
+        console.log(n);
+    </pre>
+    <h3>Output: 30</h3>
+    <p id="p1">
+       = assigns a value to a variable.<br>
+       += adds and assigns the result to the variable.<br>
+       *= multiplies and assigns the result to the variable
+    </p>
+    <h2>3. Comparison Operators</h2>
+    <p id="p1">Comparison operators compare two values and return a boolean (true or false).<br> They are useful for making decisions in conditional statements</p>
+    <pre>
+        console.log(10 > 5);
+        console.log(10 === "10");
+    </pre>
+    <h3> Output: true, false</h3>
+    <p id="p1">> checks if the left value is greater than the right.<br>
+        === checks for strict equality (both type and value).<br>
+        Other operators include <, <=, >=, and !==.
+    </p>
+    <h2>4. Logical Operators</h2>
+    <p id="p1">Comparison operators are mainly used to perform the logical operations that determine the equality or difference between the values.</p>
+    <pre>
+        const a = true, b = false;<br>
+        console.log(a && b); // Logical AND<br>
+        console.log(a || b); // Logical OR
+
+    </pre>
+    <h3>Output:- false, true</h3>
+    <p id="p1">&& returns true if both operands are true.<br>
+        || returns true if at least one operand is true.<br>
+        ! negates the boolean value.
+    </p>
+
+    <h2>5. Bitwise Operators</h2>
+    <p id="p1">Bitwise operators perform operations on binary representations of numbers.</p>
+    <pre>
+        const res = 5 & 1; // Bitwise AND
+        console.log(res);
+    </pre>
+    <h3>Output:- 1</h3>
+    <p id="p1"> & performs a bitwise AND.<br>
+        | performs a bitwise OR.<br>
+        ^ performs a bitwise XOR.<br>
+        ~ performs a bitwise NOT.
+    </p>
+
+    <h2>6. Conditional (Ternary) Operator</h2>
+    <p id="p1">The ternary operator is a shorthand for conditional statements. It takes three operands.</p>
+    <pre>
+        const age = 18;
+        const status = age >= 18 ? "Adult" : "Minor";
+        console.log(status);
+    </pre>
+    <h3>Output:- Adult</h3>
+
+    <h2>7. JavaScript Comma Operator</h2>
+    <p>Comma Operator (,) mainly evaluates its operands from left to right sequentially and returns the value of the rightmost operand.</p>
+    <pre>
+        let n1, n2
+        const res = (n1 = 1, n2 = 2, n1 + n2);
+        console.log(res);
+    </pre>
+    <h3>Output: 3</h3>
+    <p>
+        Each expression is evaluated from left to right.<br>
+        The final result of the expression is the rightmost value
+    </p>
+    <hr>
+    <p id="ques">Q8.Explain Local Scope, Block Scope,Functional Scope and Scope Chain in JavaScript.</p>
+    <h2>Local or Function Scope:</h2>
     <ul>
         <li>Variables that are declared inside a function or a method have Local or Function Scope.</li>
         <li>It means those variables or functions which are declared inside the function or a method can be accessed within that function only.</li>
     </ul>
-    <h4>Block Scope:</h4>
+    <h2>Block Scope:</h2>
     <ul>
         <li>Block Scope is related to the variables or functions which are declared using let and const since var does not have block scope.</li>
         <li>Block Scope tells us that variables that are declared inside a block { }, can be accessed within that block only, not outside of that block.</li>
     </ul>
-    <h4>Scope Chain</h4>
+    <h2>Scope Chain</h2>
     <ul>
         <li>JavaScript engine uses scopes to find out the exact location or accessibility of variables and that particular process is known as Scope Chain.</li>
         <li>Scope Chain means that one variable has a scope (it may be global or local/function or block scope) is used by another variable or function having another scope (may be global or local/function or block scope).</li>
